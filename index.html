@@ -2,85 +2,125 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>DONT QUIT VENTURES</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Edustart - Educational Startup</title>
   <link rel="stylesheet" href="styles.css">
-  <!-- Google Fonts: Inter -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
 </head>
 <body>
-  <nav class="navbar">
-    <span class="brand">dont quit ventures</span>
-    <div class="nav-links">
-      <a href="#">About Us</a>
-      <a href="#">Profile</a>
-    </div>
-  </nav>
-  <main class="main-content">
-    <section class="hero">
-      <h1 class="main-title">
-        DONT<br>
-        QUIT<br>
-        VENTURES
+  <header>
+    <nav class="navbar">
+      <div class="logo">EduStart</div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#courses">Courses</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#signup" class="cta">Sign Up</a></li>
+      </ul>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <h1>
+        Unlock Your <span class="highlight">Potential</span><br>
+        With <span class="highlight">EduStart</span>
       </h1>
-      <div class="tags">
-        <button>INVEST</button>
-        <button>BUILD</button>
-        <button class="active">OPERATE</button>
-        <button>LEASE</button>
-        <button>TRANSER</button>
+      <p class="hero-desc">Innovative learning platform for the next generation. Discover courses, connect with mentors, and start your journey today!</p>
+      <a href="#signup" class="btn-primary">Get Started</a>
+    </div>
+    <div class="hero-image">
+      <img src="https://images.unsplash.com/photo-1513258496099-48168024aec0?auto=format&fit=crop&w=600&q=80" alt="Learning illustration">
+    </div>
+  </section>
+
+  <section class="features" id="features">
+    <div class="section-header">
+      <h2>Platform Features</h2>
+      <p>Everything you need for an amazing learning experience</p>
+    </div>
+    <div class="features-grid">
+      <div class="feature-card">
+        <div class="icon-circle"><span>🎓</span></div>
+        <h3>Expert Mentors</h3>
+        <p>Connect with industry-leading educators and mentors to guide your journey.</p>
       </div>
-    </section>
-    <section class="side-content">
-      <div class="circle-text">
-        <div class="circle">
-          <span>*</span>
-        </div>
-        <svg viewBox="0 0 200 200" width="120" height="120" class="circle-svg">
-          <defs>
-            <path id="circlePath" d="M 100, 100 m -85, 0 a 85,85 0 1,1 170,0 a 85,85 0 1,1 -170,0"/>
-          </defs>
-          <text font-size="18" font-family="Inter" fill="#c2e5f2">
-            <textPath xlink:href="#circlePath">
-              Subscribe to view collections
-            </textPath>
-          </text>
-        </svg>
+      <div class="feature-card">
+        <div class="icon-circle"><span>💡</span></div>
+        <h3>Interactive Lessons</h3>
+        <p>Engage with lessons and quizzes designed for active, hands-on learning.</p>
       </div>
-      <div class="agency-desc">
-        Agency that build many amazing product to boost your business to next level.
+      <div class="feature-card">
+        <div class="icon-circle"><span>🌍</span></div>
+        <h3>Global Community</h3>
+        <p>Join a supportive community of learners from around the world.</p>
       </div>
-      <a href="#" class="cta-btn">Get early access <span class="arrow">→</span></a>
-    </section>
-    <section class="cards">
-      <div class="card card-stack">
-        <h2>Global partners</h2>
-        <p>Agency that build many amazing products to boost your business to next level.</p>
-        <p>We are officially partner with world's best brands. Subscribe to our newsletter.</p>
+      <div class="feature-card">
+        <div class="icon-circle"><span>📈</span></div>
+        <h3>Progress Tracking</h3>
+        <p>Monitor your progress and celebrate your achievements as you learn.</p>
       </div>
-      <div class="card card-stats card-purple">
-        <div class="card-icon">
-          <svg width="48" height="48" fill="none">
-            <circle cx="24" cy="24" r="18" stroke="#222" stroke-width="2"/>
-            <circle cx="24" cy="24" r="12" stroke="#222" stroke-width="2"/>
-            <circle cx="24" cy="24" r="6" stroke="#222" stroke-width="2"/>
-          </svg>
-        </div>
-        <div class="card-stats-content">
-          <div class="stat-number">50K</div>
-          <div class="stat-label">263 Contributions in the last year</div>
-        </div>
+    </div>
+  </section>
+
+  <section class="courses" id="courses">
+    <div class="section-header">
+      <h2>Popular Courses</h2>
+      <p>Start learning from curated, in-demand topics</p>
+    </div>
+    <div class="courses-grid">
+      <div class="course-card">
+        <img src="https://images.unsplash.com/photo-1503676382389-4809596d5290?auto=format&fit=crop&w=400&q=80" alt="Web Development">
+        <h4>Web Development</h4>
+        <p>HTML, CSS, JavaScript, and modern frameworks.</p>
       </div>
-      <div class="card card-stats card-blue">
-        <div class="card-icon">
-          <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="User" class="avatar"/>
-        </div>
-        <div class="card-stats-content">
-          <div class="stat-number">5000+</div>
-          <div class="stat-label">Total followers</div>
-        </div>
+      <div class="course-card">
+        <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=400&q=80" alt="Data Science">
+        <h4>Data Science</h4>
+        <p>Python, Machine Learning, and Data Analysis.</p>
       </div>
-    </section>
-  </main>
+      <div class="course-card">
+        <img src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=400&q=80" alt="Design Thinking">
+        <h4>Design Thinking</h4>
+        <p>UI/UX, Product Design, and Creative Process.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="about" id="about">
+    <div class="about-content">
+      <div class="about-image">
+        <img src="https://images.unsplash.com/photo-1518183214770-9cffbec72538?auto=format&fit=crop&w=400&q=80" alt="Teamwork">
+      </div>
+      <div class="about-text">
+        <h2>About EduStart</h2>
+        <p>
+          EduStart is dedicated to making quality education accessible for everyone, everywhere. Our platform brings together expert instructors, advanced technology, and a vibrant community to empower lifelong learners.
+        </p>
+        <a href="#signup" class="btn-secondary">Join Us</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="signup" id="signup">
+    <div class="signup-box">
+      <h2>Sign Up for Early Access</h2>
+      <form id="signupForm" autocomplete="off">
+        <input type="email" placeholder="Your email address" required>
+        <button type="submit">Notify Me</button>
+      </form>
+      <p class="signup-success" id="signupSuccess"></p>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 EduStart. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
