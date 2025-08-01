@@ -1,72 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Don't Quit Ventures</title>
-    <style>
-        @font-face {
-            font-family: 'NeueMontreal';
-            src: url('https://uploads-ssl.webflow.com/629f79e5759494335a56641a/629f79e57594943b17566433_NeueMontreal-Regular.woff2') format('woff2');
-            font-weight: 400;
-            font-style: normal;
-            font-display: swap;
-        }
-
-        body {
-            background-color: #f2f2f2;
-            color: #1a1a1a;
-            font-family: 'NeueMontreal', sans-serif;
-            font-size: 16px;
-            line-height: 1.5;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-        }
-
-        .container {
-            width: 90%;
-            max-width: 900px;
-            text-align: center;
-        }
-
-        .logo {
-            width: 150px;
-            margin-bottom: 40px;
-        }
-
-        h1 {
-            font-size: 2.5rem;
-            margin-bottom: 20px;
-        }
-
-        p {
-            font-size: 1.125rem;
-            margin-bottom: 40px;
-        }
-
-        .email-link {
-            color: #1a1a1a;
-            text-decoration: none;
-            border-bottom: 2px solid #1a1a1a;
-            font-weight: bold;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <title>Smart Digital Agency Landing Page</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="styles.css">
+  <!-- Google Fonts: Inter -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="container">
-        <img src="https://uploads-ssl.webflow.com/629f79e5759494335a56641a/629f79e57594940e29566424_logo.svg" alt="Don't Quit Ventures Logo" class="logo">
-        <h1>We back founders who refuse to quit.</h1>
-        <p>
-            We are a community of operators, investors & second time founders supporting you on your journey to building a generational company.
-            <br><br>
-            If you are relentlessly resourceful, have a chip on your shoulder & a burning desire to win —
-            <a href="mailto:team@dontquit.ventures" class="email-link">get in touch</a>.
-        </p>
+  <nav class="navbar">
+    <span class="brand">dappr</span>
+    <div class="nav-links">
+      <a href="#">About Us</a>
+      <a href="#">Profile</a>
     </div>
+  </nav>
+  <main class="main-content">
+    <section class="hero">
+      <h1 class="main-title">
+        Smart Digital Agency<br>
+        For Your Business<br>
+        To Succeed
+      </h1>
+      <div class="tags">
+        <button>Mobile App Design</button>
+        <button>Games</button>
+        <button class="active">Programing</button>
+        <button>Search Engine OPT</button>
+        <button>Software Development for Business</button>
+      </div>
+    </section>
+    <section class="side-content">
+      <div class="circle-text">
+        <div class="circle">
+          <span>*</span>
+        </div>
+        <svg viewBox="0 0 200 200" width="120" height="120" class="circle-svg">
+          <defs>
+            <path id="circlePath" d="M 100, 100 m -85, 0 a 85,85 0 1,1 170,0 a 85,85 0 1,1 -170,0"/>
+          </defs>
+          <text font-size="18" font-family="Inter" fill="#c2e5f2">
+            <textPath xlink:href="#circlePath">
+              Subscribe to view collections
+            </textPath>
+          </text>
+        </svg>
+      </div>
+      <div class="agency-desc">
+        Agency that build many amazing product to boost your business to next level.
+      </div>
+      <a href="#" class="cta-btn">Get early access <span class="arrow">→</span></a>
+    </section>
+    <section class="cards">
+      <div class="card card-stack">
+        <h2>Global partners</h2>
+        <p>Agency that build many amazing products to boost your business to next level.</p>
+        <p>We are officially partner with world's best brands. Subscribe to our newsletter.</p>
+      </div>
+      <div class="card card-stats card-purple">
+        <div class="card-icon">
+          <svg width="48" height="48" fill="none">
+            <circle cx="24" cy="24" r="18" stroke="#222" stroke-width="2"/>
+            <circle cx="24" cy="24" r="12" stroke="#222" stroke-width="2"/>
+            <circle cx="24" cy="24" r="6" stroke="#222" stroke-width="2"/>
+          </svg>
+        </div>
+        <div class="card-stats-content">
+          <div class="stat-number">50K</div>
+          <div class="stat-label">263 Contributions in the last year</div>
+        </div>
+      </div>
+      <div class="card card-stats card-blue">
+        <div class="card-icon">
+          <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="User" class="avatar"/>
+        </div>
+        <div class="card-stats-content">
+          <div class="stat-number">5000+</div>
+          <div class="stat-label">Total followers</div>
+        </div>
+      </div>
+    </section>
+  </main>
 </body>
 </html>
-

@@ -1,0 +1,263 @@
+/* Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  background: radial-gradient(circle at 60% 20%, #212b34 60%, #11222d 100%);
+  font-family: 'Inter', Arial, sans-serif;
+  color: #fff;
+  overflow-x: hidden;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 4vw 1.5rem 4vw;
+  font-size: 1.2rem;
+  background: transparent;
+}
+
+.brand {
+  font-weight: 700;
+  font-size: 1.5rem;
+  letter-spacing: 0.05em;
+  color: #c2e5f2;
+}
+
+.nav-links a {
+  margin-left: 2rem;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 400;
+  transition: color 0.15s;
+}
+.nav-links a:hover {
+  color: #c2e5f2;
+}
+
+/* Main Layout */
+.main-content {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 3vw 4vw;
+  justify-content: space-between;
+  gap: 2vw;
+}
+
+/* Hero Section */
+.hero {
+  flex: 1 1 350px;
+  min-width: 320px;
+  max-width: 540px;
+  margin-right: 3vw;
+}
+
+.main-title {
+  font-size: 2.8rem;
+  font-weight: 900;
+  line-height: 1.1;
+  margin-bottom: 2rem;
+  letter-spacing: -0.03em;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7rem;
+}
+
+.tags button {
+  background: transparent;
+  color: #fff;
+  border: 2px solid #c2e5f2;
+  border-radius: 2rem;
+  padding: 0.5rem 1.2rem;
+  font-size: 1rem;
+  font-family: inherit;
+  cursor: pointer;
+  transition: background 0.18s, color 0.18s;
+  outline: none;
+}
+
+.tags button.active,
+.tags button:hover {
+  background: #c2e5f2;
+  color: #222;
+  border-color: #c2e5f2;
+}
+
+/* Side Section */
+.side-content {
+  flex: 1 1 330px;
+  min-width: 310px;
+  max-width: 430px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 2.5rem;
+  margin-top: 1.5rem;
+}
+
+.circle-text {
+  position: relative;
+  width: 120px;
+  height: 120px;
+  margin-bottom: 1rem;
+}
+.circle {
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  top: 0; left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+.circle span {
+  font-size: 2.2rem;
+  color: #c2e5f2;
+}
+.circle-svg {
+  position: absolute;
+  top: 0; left: 0;
+  z-index: 1;
+}
+
+.agency-desc {
+  font-size: 1.13rem;
+  line-height: 1.6;
+  color: #e7f6ff;
+  max-width: 300px;
+  margin-bottom: 1.5rem;
+}
+
+.cta-btn {
+  display: inline-flex;
+  align-items: center;
+  background: #fff;
+  color: #212b34;
+  border: none;
+  border-radius: 2rem;
+  font-weight: 700;
+  font-size: 1.1rem;
+  padding: 0.7rem 2rem;
+  text-decoration: none;
+  box-shadow: 0 2px 16px 0 rgba(0,0,0,0.05);
+  transition: background 0.16s, color 0.16s;
+  margin-top: 0.5rem;
+}
+.cta-btn:hover {
+  background: #c2e5f2;
+  color: #222;
+}
+.cta-btn .arrow {
+  margin-left: 0.7em;
+  font-size: 1.25em;
+  font-weight: 400;
+}
+
+/* Cards Section */
+.cards {
+  flex: 1 1 320px;
+  min-width: 300px;
+  display: flex;
+  flex-direction: row;
+  gap: 2vw;
+  margin-top: 2.5rem;
+}
+.card {
+  background: #c2e5f2;
+  color: #212b34;
+  border-radius: 1.4rem;
+  padding: 1.7rem 1.7rem 1.3rem 1.7rem;
+  box-shadow: 0 6px 30px 0 rgba(0,0,0,0.08);
+  min-width: 200px;
+  max-width: 325px;
+  min-height: 180px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  position: relative;
+}
+.card-stack {
+  background: #c2e5f2;
+  box-shadow: 0 12px 0 0 #a4c5d9, 0 24px 0 0 #6e8ea0, 0 6px 30px 0 rgba(0,0,0,0.08);
+  z-index: 2;
+}
+.card-stack h2 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 0.7rem;
+}
+.card-stack p {
+  font-size: 1.04rem;
+  margin-bottom: 0.4rem;
+}
+.card-stats {
+  align-items: flex-start;
+  justify-content: center;
+  gap: 1em;
+  background: #d7d8fa;
+}
+.card-purple {
+  background: #d7d8fa;
+}
+.card-blue {
+  background: #c2e5f2;
+}
+.card-icon {
+  margin-bottom: 0.7em;
+}
+.avatar {
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  border: 3px solid #fff;
+}
+.stat-number {
+  font-size: 2.1rem;
+  font-weight: 900;
+  margin-bottom: 0.2em;
+  color: #2e2e49;
+}
+.stat-label {
+  font-size: 1.01rem;
+  color: #224;
+}
+
+/* Responsive */
+@media (max-width: 1100px) {
+  .main-content {
+    flex-direction: column;
+    gap: 3rem;
+  }
+  .cards {
+    flex-direction: column;
+    gap: 2rem;
+    align-items: flex-start;
+  }
+  .side-content {
+    align-items: flex-start;
+    margin-top: 0;
+  }
+}
+@media (max-width: 700px) {
+  .main-title {
+    font-size: 2.1rem;
+  }
+  .main-content {
+    padding: 2vw 4vw;
+  }
+  .navbar {
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1.2rem 4vw 0.7rem 4vw;
+  }
+}
